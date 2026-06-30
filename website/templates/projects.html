@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+    <div class="card">
+        <img src="{% static 'images/house_price.png' %}" alt="Project">
+        <div class="card-body">
+            <h3>House Price Prediction</h3>
+            <p>Regression model to predict housing prices using ML algorithms.</p>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>XGBoost</span>
+                <span>Scikit-learn</span>
+            </div>
+
+            <div class="links">
+                <a href="#">GitHub</a>
+                <a href="#">Live Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="{% static 'images/customer_churn.png' %}" alt="Project">
+        <div class="card-body">
+            <h3>Customer Churn</h3>
+            <p>Regression model to predict housing prices using ML algorithms.</p>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>XGBoost</span>
+                <span>Scikit-learn</span>
+            </div>
+
+            <div class="links">
+                <a href="#">GitHub</a>
+                <a href="#">Live Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="{% static 'images/nlp_sentiment.png' %}" alt="Project">
+        <div class="card-body">
+            <h3>NLP Sentiment Analysis</h3>
+            <p>Regression model to predict housing prices using ML algorithms.</p>
+
+            <div class="tags">
+                <span>Python</span>
+                <span>NLP</span>
+                <span>Scikit-learn</span>
+            </div>
+
+            <div class="links">
+                <a href="#">GitHub</a>
+                <a href="#">Live Demo</a>
+            </div>
+        </div>
+    </div>
+    
+
+</div>
+
+{% endblock %}

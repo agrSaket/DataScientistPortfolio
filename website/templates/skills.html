@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="page-header">
+    <h1>Technical Skills</h1>
+
+    <p>
+        I enjoy building complete data-driven solutions—from data preparation
+        and model development to deployment and visualization. Below are the
+        technologies I use regularly.
+    </p>
+</section>
+
+<div class="skills-grid">
+    <!-- Programming -->
+    <div class="skill-card">
+        <h2>Programming Languages</h2>
+        <div class="skill-list">
+            <div class="skill-item">
+                {% comment %} <i class="fa-brands fa-python"></i> {% endcomment %}
+                <p>Python</p>
+            </div>
+
+            <div class="skill-item">
+                {% comment %} <i class="fa-solid fa-database"></i> {% endcomment %}
+                <p>SQL</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+</div>
+
+{% endblock %}
