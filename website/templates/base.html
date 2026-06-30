@@ -31,6 +31,22 @@
 </div>
 
 <script src="{% static 'js/script.js' %}"></script>
-
+<script>
+    const elements = document.querySelectorAll('.reveal');
+    
+    function revealOnScroll(){
+        for (let el of elements){
+            let windowHeight = window.innerHeight;
+            let elementTop = el.getBoundingClientRect().top;
+    
+            if (elementTop < windowHeight - 100){
+                el.classList.add('active');
+            }
+        }
+    }
+    
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+    </script>
 </body>
 </html>

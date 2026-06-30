@@ -3,32 +3,90 @@
 
 {% block content %}
 
-<h2>About Me</h2>
+<!-- ABOUT HEADER CARD -->
+<div class="page-header">
 
-<p>
-I am a Data Science student passionate about Machine Learning,
-AI, and Data Analytics.
-</p>
+    <h1>About Me</h1>
 
-{% comment %} <h3>Skills</h3>
+    <p>
+        I am a Data Science enthusiast passionate about Machine Learning,
+        Data Analysis, and building end-to-end AI solutions.
+        I enjoy turning data into actionable insights and building scalable applications.
+    </p>
 
-<div class="skills">
+</div>
 
-    <div class="skill">
-        <i class="fa-brands fa-python"></i>
-        <p>Python</p>
+
+<!-- WORK EXPERIENCE -->
+<div class="section-title">Work Experience</div>
+
+<div class="exp-grid reveal">
+
+    <div class="exp-card">
+        <div class="exp-left-bar"></div>
+
+        <div class="exp-content">
+            <h3>Data Science Intern</h3>
+            <span>Company Name | 2025</span>
+            <p>
+                Worked on data preprocessing, feature engineering, and ML model development
+                for predictive analytics projects.
+            </p>
+        </div>
     </div>
 
-    <div class="skill">
-        <i class="fa-solid fa-database"></i>
-        <p>SQL</p>
+    <div class="exp-card">
+        <div class="exp-left-bar"></div>
+
+        <div class="exp-content">
+            <h3>Machine Learning Project</h3>
+            <span>Freelance | 2024</span>
+            <p>
+                Built end-to-end ML models including regression and classification pipelines.
+            </p>
+        </div>
     </div>
 
-    <div class="skill">
-        <i class="fa-solid fa-chart-line"></i>
-        <p>Machine Learning</p>
+</div>
+
+
+<!-- EDUCATION -->
+<div class="section-title">Education</div>
+
+<div class="edu-container reveal">
+
+    <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div>
+            <h3>Bachelor of Technology</h3>
+            <p>Computer Science (Data Science)</p>
+            <span>2022 - 2026</span>
+        </div>
     </div>
 
-</div> {% endcomment %}
+    <div class="edu-card">
+        <div class="edu-icon">🏫</div>
+        <div>
+            <h3>Higher Secondary</h3>
+            <p>Science Stream</p>
+            <span>2020 - 2022</span>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- CERTIFICATIONS -->
+<div class="section-title">Certifications</div>
+
+<div class="cert-grid reveal">
+
+    <div class="cert-card">Machine Learning – Coursera</div>
+    <div class="cert-card">Data Analysis – IBM</div>
+    <div class="cert-card">SQL Advanced – HackerRank</div>
+
+</div>
+
+</div>
 
 {% endblock %}
