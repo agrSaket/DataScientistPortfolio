@@ -3,90 +3,195 @@
 
 {% block content %}
 
-<!-- ABOUT HEADER CARD -->
-<div class="page-header">
-
-    <h1>About Me</h1>
-
+<!-- ABOUT HEADER -->
+<section class="page-header">
+    <h1>About <span style="color: var(--text-primary);">Me</span></h1>
     <p>
-        I am a Data Science enthusiast passionate about Machine Learning,
-        Data Analysis, and building end-to-end AI solutions.
-        I enjoy turning data into actionable insights and building scalable applications.
+        I bridge the gap between complex statistical theory and practical business solutions.
+        Passionate about extracting hidden insights from high-dimensional data,
+        designing robust machine learning pipelines, and deploying automated intelligence mechanisms.
     </p>
-
-</div>
-
+</section>
 
 <!-- WORK EXPERIENCE -->
-<div class="section-title">Work Experience</div>
+<div class="section-title"><i class="fa-solid fa-briefcase"></i> Work Experience</div>
 
-<div class="exp-grid reveal">
+<div class="timeline about-modern-timeline">
+    <!-- ITEM 1 (LEFT CARD) -->
+    <div class="timeline-item left">
+        <div class="timeline-card">
+            <h3>Machine Learning Engineer</h3>
+            <span>Tech Innovators Inc.</span>
+            <ul class="timeline-bullets">
+                <li><i class="fa-solid fa-check"></i> Engineered end-to-end data pipelines processing 1M+ daily records.
+                </li>
+                <li><i class="fa-solid fa-check"></i> Deployed XGBoost and Random Forest ensembles decreasing churn by
+                    14%.</li>
+                <li><i class="fa-solid fa-check"></i> Orchestrated containerized deployment workflows using Docker &
+                    Kubernetes.</li>
+            </ul>
+        </div>
+        <div class="timeline-center">
+            <div class="timeline-circle">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+        </div>
+        <div class="timeline-date-right">
+            <p class="timeline-badge">Jan 2024 - Present</p>
+        </div>
+    </div>
 
-    <div class="exp-card">
-        <div class="exp-left-bar"></div>
-
-        <div class="exp-content">
+    <!-- ITEM 2 (RIGHT CARD) -->
+    <div class="timeline-item right">
+        <div class="timeline-date-left">
+            <p class="timeline-badge">Jul 2023 - Dec 2023</p>
+        </div>
+        <div class="timeline-center">
+            <div class="timeline-circle">
+                <i class="fa-solid fa-chart-pie"></i>
+            </div>
+        </div>
+        <div class="timeline-card">
             <h3>Data Science Intern</h3>
-            <span>Company Name | 2025</span>
-            <p>
-                Worked on data preprocessing, feature engineering, and ML model development
-                for predictive analytics projects.
-            </p>
+            <span>DataWorks Analytics</span>
+            <ul class="timeline-bullets">
+                <li><i class="fa-solid fa-check"></i> Performed comprehensive EDA on consumer sentiment data.</li>
+                <li><i class="fa-solid fa-check"></i> Built NLP intent classification models using HuggingFace
+                    Transformers.</li>
+                <li><i class="fa-solid fa-check"></i> Designed interactive dashboards in PowerBI to present stakeholder
+                    insights.</li>
+            </ul>
         </div>
     </div>
-
-    <div class="exp-card">
-        <div class="exp-left-bar"></div>
-
-        <div class="exp-content">
-            <h3>Machine Learning Project</h3>
-            <span>Freelance | 2024</span>
-            <p>
-                Built end-to-end ML models including regression and classification pipelines.
-            </p>
-        </div>
-    </div>
-
 </div>
 
-
 <!-- EDUCATION -->
-<div class="section-title">Education</div>
+<div class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</div>
 
-<div class="edu-container reveal">
+<div class="edu-modern-grid">
+    <div class="edu-modern-card">
+        <div class="edu-icon-modern"><i class="fa-solid fa-building-columns"></i></div>
+        <div class="edu-info">
+            <h3>Master of Science</h3>
+            <p>Data Science & Artificial Intelligence</p>
+            <span class="edu-date">2024 - 2026</span>
+        </div>
+        <div class="edu-glow"></div>
+    </div>
 
-    <div class="edu-card">
-        <div class="edu-icon">🎓</div>
-        <div>
+    <div class="edu-modern-card">
+        <div class="edu-icon-modern"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="edu-info">
             <h3>Bachelor of Technology</h3>
-            <p>Computer Science (Data Science)</p>
-            <span>2022 - 2026</span>
+            <p>Computer Science Engineering</p>
+            <span class="edu-date">2020 - 2024</span>
         </div>
+        <div class="edu-glow"></div>
     </div>
-
-    <div class="edu-card">
-        <div class="edu-icon">🏫</div>
-        <div>
-            <h3>Higher Secondary</h3>
-            <p>Science Stream</p>
-            <span>2020 - 2022</span>
-        </div>
-    </div>
-
 </div>
 
 
 <!-- CERTIFICATIONS -->
-<div class="section-title">Certifications</div>
+<div class="section-title"><i class="fa-solid fa-award"></i> Certifications</div>
 
-<div class="cert-grid reveal">
+<div class="cert-modern-grid">
+    <div class="cert-modern-card">
+        <div class="cert-header">
+            <i class="fa-brands fa-aws cert-icon"></i>
+            <span>Verified</span>
+        </div>
+        <h3>AWS Certified Machine Learning</h3>
+        <p>Specialty Certification</p>
+    </div>
 
-    <div class="cert-card">Machine Learning – Coursera</div>
-    <div class="cert-card">Data Analysis – IBM</div>
-    <div class="cert-card">SQL Advanced – HackerRank</div>
+    <div class="cert-modern-card">
+        <div class="cert-header">
+            <i class="fa-brands fa-google cert-icon"></i>
+            <span>Verified</span>
+        </div>
+        <h3>TensorFlow Developer Certificate</h3>
+        <p>Google Professional Certificate</p>
+    </div>
 
+    <div class="cert-modern-card">
+        <div class="cert-header">
+            <i class="fa-brands fa-python cert-icon"></i>
+            <span>Verified</span>
+        </div>
+        <h3>Data Analysis with Python</h3>
+        <p>IBM Professional Certification</p>
+    </div>
 </div>
 
+<!-- PLATFORM STATISTICS -->
+<div class="section-title"><i class="fa-solid fa-chart-column"></i> Platform Statistics</div>
+
+<div class="stats-modern-grid">
+    <!-- LEETCODE CARD -->
+    <div class="stats-card leetcode-card">
+        <div class="stats-icon"><i class="fa-solid fa-code"></i></div>
+        <div class="stats-info">
+            <h3>LeetCode</h3>
+            <div class="stats-score">{{ leetcode.total }} <span>Solved</span></div>
+
+            <!-- Progress bars for difficulty -->
+            <div class="stats-breakdown">
+                <div class="stat-item">
+                    <span class="stat-label easy">Easy</span>
+                    <div class="stat-bar-bg">
+                        <div class="stat-bar easy" data-width="{{ leetcode.easy_pct }}"></div>
+                    </div>
+                    <span class="stat-count">{{ leetcode.easy }}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label medium">Medium</span>
+                    <div class="stat-bar-bg">
+                        <div class="stat-bar medium" data-width="{{ leetcode.medium_pct }}"></div>
+                    </div>
+                    <span class="stat-count">{{ leetcode.medium }}</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label hard">Hard</span>
+                    <div class="stat-bar-bg">
+                        <div class="stat-bar hard" data-width="{{ leetcode.hard_pct }}"></div>
+                    </div>
+                    <span class="stat-count">{{ leetcode.hard }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- KAGGLE CARD -->
+    <div class="stats-card kaggle-card">
+        <div class="stats-icon"><i class="fa-brands fa-kaggle"></i></div>
+        <div class="stats-info">
+            <h3>Kaggle</h3>
+            <div class="stats-score">Expert <span>Tier</span></div>
+
+            <div class="stats-metrics">
+                <div class="metric">
+                    <i class="fa-solid fa-medal" style="color: #fbbf24;"></i>
+                    <span class="metric-val">3</span>
+                    <span class="metric-name">Gold</span>
+                </div>
+                <div class="metric">
+                    <i class="fa-solid fa-medal" style="color: #94a3b8;"></i>
+                    <span class="metric-val">8</span>
+                    <span class="metric-name">Silver</span>
+                </div>
+                <div class="metric">
+                    <i class="fa-solid fa-medal" style="color: #b45309;"></i>
+                    <span class="metric-val">15</span>
+                    <span class="metric-name">Bronze</span>
+                </div>
+            </div>
+
+            <div class="stats-rank">
+                Top 2% in Competitions
+            </div>
+        </div>
+    </div>
 </div>
 
+<br><br>
 {% endblock %}

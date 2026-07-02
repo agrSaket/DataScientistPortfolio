@@ -2,51 +2,86 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Portfolio</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<div class="navbar">
-    <div class="logo">Portfolio</div>
+    <div class="navbar">
+        <div class="logo">Portfolio</div>
 
-    <div class="menu" id="menu">
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/skills/">Skills</a>
-        <a href="/projects/">Projects</a>
-        <a href="/contact/">Contact</a>
+        <div class="menu" id="menu">
+            <a href="/">Home</a>
+            <a href="/about/">About</a>
+            <a href="/skills/">Skills</a>
+            <a href="/projects/">Projects</a>
+            <a href="/contact/">Contact</a>
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
     </div>
 
-    <div class="hamburger" onclick="toggleMenu()">
-        ☰
+    <div class="container">
+        {% block content %}
+        {% endblock %}
     </div>
-</div>
 
-<div class="container">
-    {% block content %}
-    {% endblock %}
-</div>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script>
+        const elements = document.querySelectorAll('.reveal');
 
-<script src="{% static 'js/script.js' %}"></script>
-<script>
-    const elements = document.querySelectorAll('.reveal');
-    
-    function revealOnScroll(){
-        for (let el of elements){
-            let windowHeight = window.innerHeight;
-            let elementTop = el.getBoundingClientRect().top;
-    
-            if (elementTop < windowHeight - 100){
-                el.classList.add('active');
+        function revealOnScroll() {
+            for (let el of elements) {
+                let windowHeight = window.innerHeight;
+                let elementTop = el.getBoundingClientRect().top;
+
+                if (elementTop < windowHeight - 100) {
+                    el.classList.add('active');
+                }
             }
         }
-    }
-    
-    window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll();
+
+        window.addEventListener('scroll', revealOnScroll);
+        revealOnScroll();
     </script>
+
+    <script>
+        const items = document.querySelectorAll('.timeline-item');
+        const progress = document.querySelector('.timeline-progress');
+
+        function updateTimeline() {
+
+            let scrollTop = window.scrollY;
+            let docHeight = document.body.scrollHeight - window.innerHeight;
+
+            // LINE FILL
+            let progressHeight = (scrollTop / docHeight) * 100;
+            if (progress) {
+                progress.style.height = progressHeight + "%";
+            }
+
+            // REVEAL ITEMS
+            items.forEach(item => {
+                let rect = item.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    item.classList.add('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateTimeline);
+        updateTimeline();
+    </script>
+
 </body>
+
 </html>

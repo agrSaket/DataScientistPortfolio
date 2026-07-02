@@ -2,93 +2,86 @@
 {% load static %}
 
 {% block content %}
-
 <section class="page-header">
     <h1>Technical Skills</h1>
-
     <p>
-        I enjoy building complete data-driven solutions—from data preparation
-        and model development to deployment and visualization. Below are the
-        technologies I use regularly.
+        My core stack for building end-to-end Machine Learning solutions,
+        designing robust data pipelines, and communicating strategic insights.
     </p>
 </section>
 
-<div class="skills-grid">
-    <!-- Programming -->
-    <div class="skill-card">
-        <h2>Programming Languages</h2>
-        <div class="skill-list">
-            <div class="skill-item">
-                <i class="fa-brands fa-python"></i>
-                <p>Python</p>
+<div class="bento-grid">
+    <!-- CORE LANGUAGES -->
+    <div class="bento-card core-card">
+        <div class="bento-content">
+            <div class="bento-header">
+                <i class="fa-solid fa-code bento-icon"></i>
+                <h2>Core Languages</h2>
             </div>
-            <div class="skill-item">
-                <i class="fa-solid fa-database"></i>
-                <p>SQL</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="skill-card">
-        <h2>Programming Languages</h2>
-        <div class="skill-list">
-            <div class="skill-item">
-                <i class="fa-brands fa-python"></i>
-                <p>Python</p>
-            </div>
-            <div class="skill-item">
-                <i class="fa-solid fa-database"></i>
-                <p>SQL</p>
+            <p>The foundation of my data manipulation and algorithm design.</p>
+            <div class="neon-skills">
+                <span class="neon-tag primary">Python</span>
+                <span class="neon-tag primary">SQL</span>
+                <span class="neon-tag primary">JavaScript</span>
             </div>
         </div>
     </div>
 
-    <div class="skill-card">
-        <h2>Programming Languages</h2>
-        <div class="skill-list">
-            <div class="skill-item">
-                <i class="fa-brands fa-python"></i>
-                <p>Python</p>
+    <!-- MACHINE LEARNING & AI (Featured) -->
+    <div class="bento-card ml-card">
+        <div class="bento-content">
+            <div class="bento-header">
+                <i class="fa-solid fa-brain bento-icon"></i>
+                <h2>Machine Learning & AI</h2>
             </div>
-            <div class="skill-item">
-                <i class="fa-solid fa-database"></i>
-                <p>SQL</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="skill-card">
-        <h2>Programming Languages</h2>
-        <div class="skill-list">
-            <div class="skill-item">
-                <i class="fa-brands fa-python"></i>
-                <p>Python</p>
-            </div>
-            <div class="skill-item">
-                <i class="fa-solid fa-database"></i>
-                <p>SQL</p>
-            </div>
-            <div class="skill-item">
-                <i class="fa-brands fa-python"></i>
-                <p>Python</p>
-            </div>
-            <div class="skill-item">
-                <i class="fa-solid fa-database"></i>
-                <p>SQL</p>
-            </div>
-            <div class="skill-item">
-                <i class="fa-brands fa-python"></i>
-                <p>Python</p>
-            </div>
-            <div class="skill-item">
-                <i class="fa-solid fa-database"></i>
-                <p>SQL</p>
+            <p>Building predictive models, deep neural networks, and deploying cutting-edge Generative AI.</p>
+            <div class="neon-skills ml-skills">
+                <span class="neon-tag">TensorFlow</span>
+                <span class="neon-tag">PyTorch</span>
+                <span class="neon-tag">Scikit-Learn</span>
+                <span class="neon-tag">XGBoost / LightGBM</span>
+                <span class="neon-tag">HuggingFace Transformers</span>
+                <span class="neon-tag">LangChain</span>
+                <span class="neon-tag">OpenCV</span>
             </div>
         </div>
     </div>
 
-    
+    <!-- DATA ENGINEERING & MLOPS -->
+    <div class="bento-card tools-card">
+        <div class="bento-content">
+            <div class="bento-header">
+                <i class="fa-solid fa-server bento-icon"></i>
+                <h2>Data Engineering & MLOps</h2>
+            </div>
+            <p>Building predictive models, deep neural networks, and deploying cutting-edge Generative AI.</p>
+            <div class="neon-skills">
+                <span class="neon-tag">Docker</span>
+                <span class="neon-tag">AWS / GCP</span>
+                <span class="neon-tag">Apache Spark</span>
+                <span class="neon-tag">Git & CI/CD</span>
+                <span class="neon-tag">MLflow</span>
+                <span class="neon-tag">FastAPI</span>
+            </div>
+        </div>
+    </div>
 
+    <!-- DATA VISUALIZATION -->
+    <div class="bento-card vis-card">
+        <div class="bento-content">
+            <div class="bento-header">
+                <i class="fa-solid fa-chart-pie bento-icon"></i>
+                <h2>Data Visualization</h2>
+            </div>
+            <p>Building predictive models, deep neural networks, and deploying cutting-edge Generative AI.</p>
+            <div class="neon-skills">
+                <span class="neon-tag primary">Tableau</span>
+                <span class="neon-tag primary">Power BI</span>
+                <span class="neon-tag primary">Matplotlib</span>
+                <span class="neon-tag primary">Seaborn</span>
+                <span class="neon-tag primary">Plotly</span>
+            </div>
+        </div>
+    </div>
 </div>
-
 {% endblock %}

@@ -1,0 +1,56 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+
+# ======================
+# Virtual Environment
+# ======================
+venv/
+env/
+ENV/
+
+# ======================
+# Django
+# ======================
+*.log
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+
+# ======================
+# Environment variables
+# ======================
+.env
+
+# ======================
+# VS Code
+# ======================
+.vscode/
+
+# ======================
+# OS files (Windows)
+# ======================
+Thumbs.db
+Desktop.ini
+
+# ======================
+# Mac OS
+# ======================
+.DS_Store
+
+# ======================
+# PyCharm / IDE
+# ======================
+.idea/
+
+# ======================
+# Django migrations (optional - only if you want clean resets)
+# ======================
+# */migrations/*.pyc
+# */migrations/__pycache__/

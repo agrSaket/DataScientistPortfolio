@@ -2,69 +2,102 @@
 {% load static %}
 
 {% block content %}
+<section class="page-header">
+    <h1>Featured <span style="color: var(--text-primary);">Projects</span></h1>
+    <p>
+        End-to-end data science projects from exploratory data analysis
+        to deployment. Showcasing models built for real-world impact.
+    </p>
+</section>
 
-<h2>Projects</h2>
+<div class="projects-grid-modern">
 
-<div class="projects">
+    <!-- PROJECT 1 -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/house_price.png' %}" alt="House Price Prediction">
+            <div class="img-overlay"></div>
+        </div>
 
-    <div class="card">
-        <img src="{% static 'images/house_price.png' %}" alt="Project">
-        <div class="card-body">
+        <div class="project-content">
             <h3>House Price Prediction</h3>
-            <p>Regression model to predict housing prices using ML algorithms.</p>
+            <p>Regression model predicting housing prices using advanced ensemble ML algorithms and rigorous feature
+                engineering.</p>
 
-            <div class="tags">
-                <span>Python</span>
-                <span>XGBoost</span>
-                <span>Scikit-learn</span>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> XGBoost</span>
+                <span class="skill-pill"><i class="fa-solid fa-microchip"></i> Scikit-learn</span>
             </div>
 
-            <div class="links">
-                <a href="#">GitHub</a>
-                <a href="#">Live Demo</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="{% static 'images/customer_churn.png' %}" alt="Project">
-        <div class="card-body">
-            <h3>Customer Churn</h3>
-            <p>Regression model to predict housing prices using ML algorithms.</p>
-
-            <div class="tags">
-                <span>Python</span>
-                <span>XGBoost</span>
-                <span>Scikit-learn</span>
-            </div>
-
-            <div class="links">
-                <a href="#">GitHub</a>
-                <a href="#">Live Demo</a>
+            <div class="project-actions">
+                <a href="#" class="btn-project btn-github">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="#" class="btn-project btn-demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
             </div>
         </div>
     </div>
 
-    <div class="card">
-        <img src="{% static 'images/nlp_sentiment.png' %}" alt="Project">
-        <div class="card-body">
+    <!-- PROJECT 2 -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/customer_churn.png' %}" alt="Customer Churn">
+            <div class="img-overlay"></div>
+        </div>
+
+        <div class="project-content">
+            <h3>Customer Churn Prediction</h3>
+            <p>Classification architecture predicting customer churn probability with deep data preprocessing and
+                hyperparameter tuning.</p>
+
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> XGBoost</span>
+                <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> TensorFlow</span>
+            </div>
+
+            <div class="project-actions">
+                <a href="#" class="btn-project btn-github">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="#" class="btn-project btn-demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/nlp_sentiment.png' %}" alt="NLP Sentiment Analysis">
+            <div class="img-overlay"></div>
+        </div>
+
+        <div class="project-content">
             <h3>NLP Sentiment Analysis</h3>
-            <p>Regression model to predict housing prices using ML algorithms.</p>
+            <p>Natural language processing pipeline to classify text sentiment with high accuracy using state-of-the-art
+                transformers.</p>
 
-            <div class="tags">
-                <span>Python</span>
-                <span>NLP</span>
-                <span>Scikit-learn</span>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fa-solid fa-language"></i> NLP</span>
+                <span class="skill-pill"><i class="fa-solid fa-layer-group"></i> HuggingFace</span>
             </div>
 
-            <div class="links">
-                <a href="#">GitHub</a>
-                <a href="#">Live Demo</a>
+            <div class="project-actions">
+                <a href="#" class="btn-project btn-github">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="#" class="btn-project btn-demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
             </div>
         </div>
     </div>
-    
 
 </div>
-
 {% endblock %}

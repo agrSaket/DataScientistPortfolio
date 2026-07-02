@@ -1,12 +1,47 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
+<div class="hero-fullscreen">
+    <div class="hero-content">
+        <h1 class="hero-title">Hi, I'm <span class="highlight">Saket</span></h1>
+        <h2 class="hero-subtitle">Data Scientist & ML Engineer</h2>
+        <p class="hero-desc">
+            I specialize in transforming raw data into strategic solutions.
+            From engineering deep neural networks and fine-tuning
+            Transformers, to deploying production-ready ML architecture,
+            I build intelligent systems that drive real-world impact.
+        </p>
 
-<h1>Hi, I'm Your Name</h1>
-<p>Data Scientist | ML Engineer</p>
+        <div class="hero-actions">
+            <a href="/projects/" class="btn">View Projects</a>
+            <a href="/contact/" class="btn-outline">Contact Me</a>
+        </div>
+    </div>
 
-<p>
-I build machine learning models and data-driven applications.
-</p>
+    <div class="hero-visuals">
+        <div class="profile-wrapper">
+            <!-- Animated rings -->
+            <div class="pulse-ring ring-1"></div>
+            <div class="pulse-ring ring-2"></div>
 
+            <!-- Profile Image -->
+            <img src="{% static 'images/profile.png' %}" alt="Saket - Data Scientist" class="profile-img">
+
+            <!-- Data Science Animations: ANN Nodes -->
+            <div class="ann-node node-1"></div>
+            <div class="ann-node node-2"></div>
+            <div class="ann-node node-3"></div>
+
+            <!-- Data Science Animations: Transformer Block -->
+            <div class="floating-block tf-block">
+                <i class="fa-solid fa-layer-group"></i> Multi-Head Attention
+            </div>
+
+            <div class="floating-block dl-block">
+                <i class="fa-solid fa-network-wired"></i> Deep Learning
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
