@@ -945,6 +945,64 @@ body:has(.hero-fullscreen) {
     }
 }
 
+/* Resume Widget (Right Side Floating) */
+.resume-widget {
+    position: fixed;
+    right: 8%;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+/* .resume-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+} */
+
+/* Vertical Text */
+.resume-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+/* Icon Button */
+.resume-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    box-shadow: var(--shadow-subtle);
+    transition: var(--transition);
+}
+
+/* Hover Effects */
+.resume-link:hover .resume-text {
+    color: var(--accent);
+}
+
+.resume-link:hover .resume-icon {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-hover);
+    background: var(--bg-elevated);
+}
+
 /* ==========================================================================
    BENTO GRID SKILLS PAGE
    ========================================================================== */
