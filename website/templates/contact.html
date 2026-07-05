@@ -19,7 +19,7 @@
             </div>
             <div class="info-text">
                 <h3>Email</h3>
-                <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a>
+                <a href="mailto:{{ email }}">{{ email }}</a>
             </div>
         </div>
 
@@ -29,7 +29,7 @@
             </div>
             <div class="info-text">
                 <h3>LinkedIn</h3>
-                <a href="#" target="_blank">linkedin.com/in/yourprofile</a>
+                <a href="{{ linkedin }}" target="_blank">{{ linkedin }}</a>
             </div>
         </div>
 
@@ -39,17 +39,17 @@
             </div>
             <div class="info-text">
                 <h3>GitHub</h3>
-                <a href="https://github.com/yourprofile" target="_blank">github.com/yourprofile</a>
+                <a href="{{ github }}" target="_blank">{{ github }}</a>
             </div>
         </div>
 
         <div class="info-card-modern">
             <div class="info-icon">
-                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-brands fa-kaggle"></i>
             </div>
             <div class="info-text">
-                <h3>Location</h3>
-                <p>San Francisco, CA</p>
+                <h3>Kaggle</h3>
+                <a href="{{ kaggle }}" target="_blank">{{ kaggle }}</a>
             </div>
         </div>
     </div>

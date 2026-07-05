@@ -1,6 +1,8 @@
 import os
 import requests
 from django.shortcuts import render
+from django.conf import settings
+from django.shortcuts import render
 
 
 def home(request):
@@ -67,4 +69,10 @@ def projects(request):
     return render(request, 'projects.html')
 
 def contact(request):
-    return render(request, 'contact.html')
+    context = {
+        "email": settings.EMAIL,
+        "linkedin": settings.LINKEDIN,
+        "github": settings.GITHUB,
+        "kaggle": settings.KAGGLE,
+    }
+    return render(request, "contact.html", context)
