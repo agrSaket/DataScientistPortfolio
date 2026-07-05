@@ -6,7 +6,13 @@ from django.shortcuts import render
 
 
 def home(request):
-    return render(request, 'home.html')
+    context = {
+        "github": settings.GITHUB,
+        "kaggle": settings.KAGGLE,
+        "leetcode": settings.LEETCODE,
+        "hackerrank": settings.HACKERRANK,
+    }
+    return render(request, 'home.html', context)
 
 def about(request):
     leetcode_data = {

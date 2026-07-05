@@ -935,6 +935,18 @@ body:has(.hero-fullscreen) {
     animation-delay: 1.5s;
 }
 
+.hr-block {
+    top: -10%;
+    right: 65%;
+    animation-delay: 1.5s;
+}
+
+.gh-block {
+    bottom: -10%;
+    right: 0%;
+    animation-delay: 1.5s;
+}
+
 @keyframes floatBlock {
     0% {
         transform: translateY(0) rotate(0deg);
@@ -1290,7 +1302,6 @@ body:has(.hero-fullscreen) {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-bottom: 25px;
 }
 
 .skill-pill {
@@ -1869,4 +1880,40 @@ body:has(.hero-fullscreen) {
     padding: 6px 12px;
     border-radius: var(--radius-sm);
     border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Top-right action buttons */
+.project-top-actions {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    z-index: 5;
+}
+
+/* Circular buttons */
+.project-icon-btn {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(20,20,20,0.85);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--border-accent);
+    color: var(--text-primary);
+    transition: var(--transition);
+}
+
+.project-icon-btn:hover {
+    background: var(--accent);
+    color: #000;
+
+    transform: scale(1.1);
+    box-shadow: 0 0 18px rgba(167,139,250,.45);
 }

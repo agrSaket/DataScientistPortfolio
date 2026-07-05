@@ -23,6 +23,8 @@ EMAIL = os.getenv("EMAIL")
 LINKEDIN = os.getenv("LINKEDIN")
 GITHUB = os.getenv("GITHUB")
 KAGGLE = os.getenv("KAGGLE")
+LEETCODE = os.getenv("LEETCODE")
+HACKERRANK = os.getenv("HACKERRANK")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
