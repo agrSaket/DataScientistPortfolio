@@ -1372,9 +1372,6 @@ body:has(.hero-fullscreen) {
    MODERN CONTACT PAGE
    ========================================================================== */
 .contact-modern-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 50px;
     max-width: 900px;
     margin: 0 auto;
     align-items: start;
@@ -1388,9 +1385,15 @@ body:has(.hero-fullscreen) {
 
 /* Info Cards (Left) */
 .contact-info-modern {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact-info-modern {
+        grid-template-columns: 1fr;
+    }
 }
 
 .info-card-modern {
@@ -1540,8 +1543,15 @@ body:has(.hero-fullscreen) {
     box-shadow: 0 0 15px var(--accent-dim);
 }
 
-.about-modern-timeline .timeline-circle img {
+/* .about-modern-timeline .timeline-circle img {
     display: none;
+} */
+
+.timeline-circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .timeline-badge {
@@ -1607,13 +1617,18 @@ body:has(.hero-fullscreen) {
     color: var(--accent);
     width: 70px;
     height: 70px;
-    background: rgba(167, 139, 250, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     z-index: 2;
+}
+
+.edu-icon-modern img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .edu-info {
@@ -1625,10 +1640,18 @@ body:has(.hero-fullscreen) {
     margin-bottom: 4px;
 }
 
+.edu-info h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.edu-info h3 a:hover {
+    color: var(--accent);
+}
+
 .edu-info p {
     font-size: 0.95rem;
     color: var(--text-secondary);
-    margin-bottom: 8px;
 }
 
 .edu-date {
@@ -1656,6 +1679,33 @@ body:has(.hero-fullscreen) {
     opacity: 1;
 }
 
+.edu-college,
+.edu-cgpa {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+}
+
+.edu-college i,
+.edu-cgpa i {
+    color: var(--accent);
+    width: 16px;
+    text-align: center;
+}
+
+.edu-cgpa {
+    font-weight: 500;
+}
+
+.edu-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Modern Certifications Grid */
 .cert-modern-grid {
     display: grid;
@@ -1681,12 +1731,6 @@ body:has(.hero-fullscreen) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
-}
-
-.cert-icon {
-    font-size: 2rem;
-    color: var(--text-primary);
 }
 
 .cert-header span {
@@ -1701,13 +1745,6 @@ body:has(.hero-fullscreen) {
 
 .cert-modern-card h3 {
     font-size: 1.1rem;
-    margin-bottom: 5px;
-}
-
-.cert-modern-card p {
-    font-size: 0.9rem;
-    color: var(--accent);
-    margin: 0;
 }
 
 /* ==========================================================================

@@ -10,7 +10,8 @@
     </p>
 </section>
 
-<div class="section-title"><i class="fa-solid fa-diagram-project"></i> Major Projects</div>
+{% comment %} Major Projects {% endcomment %}
+{% comment %} <div class="section-title"><i class="fa-solid fa-diagram-project"></i> Major Projects</div>
 <div class="projects-grid-modern">
 
     <!-- PROJECT 1 -->
@@ -103,50 +104,42 @@
             </div>
         </div>
     </div>
-</div>
+</div> {% endcomment %}
 
-<div class="section-title"><i class="fa-solid fa-code"></i> Minor Projects</div>
+{% comment %} Minor Projects {% endcomment %}
+<div class="section-title"><i class="fa-solid fa-code"></i> Projects</div>
 <div class="projects-grid-modern">
 
-    <!-- PROJECT 1 -->
+    <!-- PROJECT 1 Autonomous AI Agents -->
     <div class="project-card-modern">
         <div class="project-img-box">
-    
-            <img src="{% static 'images/house_price.png' %}" alt="House Price Prediction">
-    
+            <img src="{% static 'images/minor_projects/Autonomous_AI_Agents.png' %}" alt="House Price Prediction">
             <div class="img-overlay"></div>
-    
-            <!-- Top Right Actions -->
             <div class="project-top-actions">
                 <a href="#" class="project-icon-btn" title="Live Demo">
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-    
+                </a>    
                 <a href="#" class="project-icon-btn" title="GitHub Repository">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </div>
         </div>
-    
         <div class="project-content">
-            <h3>House Price Prediction</h3>
-            <p>
-                Regression model predicting housing prices using advanced ensemble ML algorithms and rigorous feature engineering.
-            </p>
+            <h3>Autonomous AI Agents</h3>
+            <p>Designed AI agent workflows using LangGraph to create stateful, multi-step reasoning systems. Developed autonomous agents capable of tool usage, task planning, and dynamic decision-making.</p>
             <div class="project-skills">
-                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
-                <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> XGBoost</span>
-                <span class="skill-pill"><i class="fa-solid fa-microchip"></i> Scikit-learn</span>
+                <span class="skill-pill"><i class="fa-solid fa-robot"></i> Agentic AI</span>
+                <span class="skill-pill"><i class="fa-solid fa-diagram-project"></i> LangGraph</span>
+                <span class="skill-pill"><i class="fa-solid fa-gears"></i> API</span>
             </div>
         </div>
     </div>
 
-    <!-- PROJECT 2 -->
+    <!-- PROJECT 2 Generative AI Applications -->
     <div class="project-card-modern">
         <div class="project-img-box">
-            <img src="{% static 'images/customer_churn.png' %}" alt="House Price Prediction">
+            <img src="{% static 'images/minor_projects/Generative_AI_Applications.jpg' %}" alt="House Price Prediction">
             <div class="img-overlay"></div>
-            <!-- Top Right Actions -->
             <div class="project-top-actions">
                 <a href="#" class="project-icon-btn" title="Live Demo">
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -156,26 +149,22 @@
                 </a>
             </div>
         </div>
-    
         <div class="project-content">
-            <h3>Customer Churn Prediction</h3>
-            <p>Classification architecture predicting customer churn probability with deep data preprocessing and
-                hyperparameter tuning.</p>
-
+            <h3>Generative AI Applications</h3>
+            <p>Built Generative AI applications using LangChain for document processing, retrieval-based question answering, and intelligent text generation. Integrated LLM workflows with embeddings and vector databases for context-aware responses.</p>
             <div class="project-skills">
-                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
-                <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> XGBoost</span>
-                <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> TensorFlow</span>
+                <span class="skill-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> Gen AI</span>
+                <span class="skill-pill"><i class="fa-solid fa-link"></i> LangChain</span>
+                <span class="skill-pill"><i class="fa-solid fa-database"></i> Vector DB</span>
             </div>
         </div>
     </div>
 
-    <!-- PROJECT 3 -->
+    <!-- PROJECT 3 Transformer-Based NLP Applications -->
     <div class="project-card-modern">
         <div class="project-img-box">
-            <img src="{% static 'images/nlp_sentiment.png' %}" alt="House Price Prediction">
+            <img src="{% static 'images/minor_projects/Transformer_Based.jpg' %}" alt="House Price Prediction">
             <div class="img-overlay"></div>
-            <!-- Top Right Actions -->
             <div class="project-top-actions">
                 <a href="#" class="project-icon-btn" title="Live Demo">
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -185,52 +174,357 @@
                 </a>
             </div>
         </div>
-    
         <div class="project-content">
-            <h3>NLP Sentiment Analysis</h3>
-            <p>Natural language processing pipeline to classify text sentiment with high accuracy using state-of-the-art
-                transformers.</p>
+            <h3>Transformer-Based NLP Applications</h3>
+            <p>Developed NLP solutions using transformer architectures for text understanding, classification, and semantic analysis. Improved contextual understanding and automate text-based tasks.</p>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-solid fa-language"></i> Transformer</span>
+                <span class="skill-pill"><i class="fa-solid fa-brain"></i> Deep Learning</span>
+                <span class="skill-pill"><i class="fa-solid fa-file-lines"></i> NLP</span>
+            </div>
+        </div>
+    </div>
 
+    <!-- PROJECT 4 Plant Disease Detection -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/minor_projects/Plant_Disease_Detection.jpg' %}" alt="House Price Prediction">
+            <div class="img-overlay"></div>
+            <div class="project-top-actions">
+                <a href="#" class="project-icon-btn" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" class="project-icon-btn" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>Plant Disease Detection</h3>
+            <p>Designed an image classification model to identify plant diseases from leaf images using deep learning. Enabled early disease detection to support precision agriculture and crop health monitoring.</p>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fa-solid fa-layer-group"></i> Deep Learning</span>
+                <span class="skill-pill"><i class="fa-solid fa-microchip"></i> CNN</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 5 Handwritten Digit Recognition -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/minor_projects/Handwritten_Digit_Recognition.jpg' %}" alt="House Price Prediction">
+            <div class="img-overlay"></div>
+            <div class="project-top-actions">
+                <a href="#" class="project-icon-btn" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" class="project-icon-btn" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>Handwritten Digit Recognition</h3>
+            <p>Developed a convolutional neural network to recognize handwritten digits from image datasets. Trained and evaluated the model to achieve high classification accuracy on digit recognition tasks.</p>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fa-solid fa-microchip"></i> CNN</span>
+                <span class="skill-pill"><i class="fa-solid fa-display"></i> Streamlit</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 6 Traffic Sign Classification -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/minor_projects/Traffic_Sign_Classification.jpg' %}" alt="House Price Prediction">
+            <div class="img-overlay"></div>
+            <div class="project-top-actions">
+                <a href="#" class="project-icon-btn" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" class="project-icon-btn" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>Traffic Sign Classification</h3>
+            <p>Built a deep learning model to classify traffic signs from road images for intelligent transportation systems. Applied image preprocessing and convolutional neural networks to achieve accurate recognition.</p>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fa-solid fa-eye"></i> OpenCV</span>
+                <span class="skill-pill"><i class="fa-solid fa-layer-group"></i> CNN</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 7 Air Quality Prediction -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/minor_projects/Air_Quality_Prediction.jpg' %}" alt="House Price Prediction">
+            <div class="img-overlay"></div>
+            <div class="project-top-actions">
+                <a href="#" class="project-icon-btn" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" class="project-icon-btn" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>Air Quality Prediction</h3>
+            <p>Developed a predictive model to forecast air quality levels using historical environmental and pollution data. Analyzed trends and generated forecasts to support proactive environmental monitoring.</p>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fa-solid fa-code"></i> Sklearn</span>
+                <span class="skill-pill"><i class="fa-solid fa-chart-pie"></i> Matplotlib</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 8 Fake News Detection -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/minor_projects/Fake_News_Detection.jpg' %}" alt="House Price Prediction">
+            <div class="img-overlay"></div>
+            <div class="project-top-actions">
+                <a href="#" class="project-icon-btn" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" class="project-icon-btn" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>Fake News Detection</h3>
+            <p>Built a text classification model to identify fake and genuine news articles using natural language processing. Performed feature extraction and trained machine learning models for reliable detection.</p>
             <div class="project-skills">
                 <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
                 <span class="skill-pill"><i class="fa-solid fa-language"></i> NLP</span>
-                <span class="skill-pill"><i class="fa-solid fa-layer-group"></i> HuggingFace</span>
+                <span class="skill-pill"><i class="fa-solid fa-book"></i> TF-IDF</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 9 AI-Powered Resume Screening -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/minor_projects/Resume_Screening.jpg' %}" alt="House Price Prediction">
+            <div class="img-overlay"></div>
+            <div class="project-top-actions">
+                <a href="#" class="project-icon-btn" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" class="project-icon-btn" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>AI-Powered Resume Screening</h3>
+            <p>Designed an intelligent resume screening system to analyze resumes and match candidates with job requirements. Utilized NLP techniques to extract skills and rank resumes automatically.</p>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fa-solid fa-file-lines"></i> NLP</span>
+                <span class="skill-pill"><i class="fa-solid fa-terminal"></i> Regex</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 10 Sentiment Analysis on Reviews -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/minor_projects/Sentiment_Analysis.jpg' %}" alt="House Price Prediction">
+            <div class="img-overlay"></div>
+            <div class="project-top-actions">
+                <a href="#" class="project-icon-btn" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" class="project-icon-btn" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>Sentiment Analysis on Reviews</h3>
+            <p>Developed an NLP-based sentiment analysis model to classify customer reviews as positive, negative, or neutral. Applied text preprocessing and machine learning techniques to extract actionable insights.</p>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fa-solid fa-spell-check"></i> NLTK</span>
+                <span class="skill-pill"><i class="fa-solid fa-comments"></i> NLP</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 11 Time Series Demand Forecasting -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/minor_projects/Time_Series.jpg' %}" alt="Time Series Prediction">
+            <div class="img-overlay"></div>
+            <div class="project-top-actions">
+                <a href="#" class="project-icon-btn" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" class="project-icon-btn" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>Time Series Demand Prediction</h3>
+            <p>Developed an end-to-end time series forecasting solution to predict future demand using historical business data. Performed trend analysis, feature engineering, and forecasting to support inventory planning and data-driven decision making.</p>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> Time Series</span>
+                <span class="skill-pill"><i class="fa-solid fa-brain"></i> Sklearn</span>
+                <span class="skill-pill"><i class="fa-solid fa-brain"></i> ML</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 12 Movie Recommendation System -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/minor_projects/Movie_Recommendation_System.jpg' %}" alt="House Price Prediction">
+            <div class="img-overlay"></div>
+            <div class="project-top-actions">
+                <a href="#" class="project-icon-btn" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" class="project-icon-btn" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>Movie Recommendation System</h3>
+            <p>Built a recommendation engine that suggests movies based on user preferences and similarity scores. Implemented content-based filtering to provide personalized movie recommendations.</p>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-solid fa-brain"></i> Sklearn</span>
+                <span class="skill-pill"><i class="fa-solid fa-user-check"></i> Recommendation System</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 13 Loan Approval Prediction -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/minor_projects/Loan_Approval_Prediction.jpg' %}" alt="House Price Prediction">
+            <div class="img-overlay"></div>
+            <div class="project-top-actions">
+                <a href="#" class="project-icon-btn" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" class="project-icon-btn" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>Loan Approval Prediction</h3>
+            <p>Developed a machine learning model to predict loan approval based on applicant demographics and financial history. Performed data preprocessing, feature engineering, and classification to improve prediction accuracy.</p>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fa-solid fa-gears"></i> Scikit-learn</span>
+                <span class="skill-pill"><i class="fa-solid fa-tree"></i> Random Forest</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 14 Vendor Performance Analysis -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/minor_projects/Vendor_Performance_Analysis.jpg' %}" alt="House Price Prediction">
+            <div class="img-overlay"></div>
+            <div class="project-top-actions">
+                <a href="#" class="project-icon-btn" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" class="project-icon-btn" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>Vendor Performance Analysis</h3>
+            <p>Built an interactive analytics dashboard to evaluate vendor performance, inventory turnover, and profitability. Leveraged EDA and data-driven insights to identify underperforming vendors and recommend inventory and pricing optimizations.</p>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fa-solid fa-code"></i> SQL</span>
+                <span class="skill-pill"><i class="fa-solid fa-chart-pie"></i> Power BI</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECT 15 Cryptocurrency Market Tracker -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/minor_projects/Cryptocurrency_Market_Tracker.jpg' %}" alt="House Price Prediction">
+            <div class="img-overlay"></div>
+            <div class="project-top-actions">
+                <a href="#" class="project-icon-btn" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" class="project-icon-btn" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>Cryptocurrency Market Tracker</h3>
+            <p>Built an interactive analytics application that retrieves live cryptocurrency market data through APIs and tracks price movements, trading volume, and market trends. Created dynamic visualizations to support real-time market analysis.</p>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fa-solid fa-display"></i> Streamlit</span>
+                <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> REST APIs</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- PROJECT 16 Real-Time Weather Analytics  -->
+    <div class="project-card-modern">
+        <div class="project-img-box">
+            <img src="{% static 'images/minor_projects/Weather_Analytics_Dashboard.jpg' %}" alt="House Price Prediction">
+            <div class="img-overlay"></div>
+            <div class="project-top-actions">
+                <a href="#" class="project-icon-btn" title="Live Demo">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="#" class="project-icon-btn" title="GitHub Repository">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="project-content">
+            <h3>Real-Time Weather Analytics Dashboard</h3>
+            <p>Developed a Streamlit dashboard that fetches live weather data from public APIs and analyzes temperature, humidity, and wind trends. Visualized real-time insights with interactive charts for easy monitoring and comparison.</p>
+            <div class="project-skills">
+                <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="skill-pill"><i class="fa-solid fa-chart-area"></i> Matplotlib</span>
+                <span class="skill-pill"><i class="fa-solid fa-plug"></i> API</span>
             </div>
         </div>
     </div>
 </div>
 
+{% comment %} Hackathon Projects {% endcomment %}
 <div class="section-title"><i class="fa-solid fa-trophy"></i> Hackathon Projects</div>
 <div class="projects-grid-modern">
-
     <!-- PROJECT 1 -->
     <div class="project-card-modern">
         <div class="project-img-box">
-    
-            <img src="{% static 'images/house_price.png' %}" alt="House Price Prediction">
-    
+            <img src="{% static 'images/hackathon/hackathon_1.jpeg' %}" alt="House Price Prediction">
             <div class="img-overlay"></div>
-    
-            <!-- Top Right Actions -->
-            <div class="project-top-actions">
-                <a href="#" class="project-icon-btn" title="Live Demo">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-    
-                <a href="#" class="project-icon-btn" title="GitHub Repository">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
         </div>
-    
         <div class="project-content">
-            <h3>House Price Prediction</h3>
-            <p>
-                Regression model predicting housing prices using advanced ensemble ML algorithms and rigorous feature engineering.
-            </p>
+            <h3>Hydraulic System Fault Detection</h3>
+            <p>Developed an AI-powered fault detection system to identify anomalies in hydraulic equipment using sensor data. Improved predictive maintenance by enabling early fault and reducing unplanned downtime.</p>
             <div class="project-skills">
                 <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
-                <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> XGBoost</span>
+                <span class="skill-pill"><i class="fa-solid fa-diagram-project"></i> XGBoost</span>
                 <span class="skill-pill"><i class="fa-solid fa-microchip"></i> Scikit-learn</span>
             </div>
         </div>
@@ -239,28 +533,17 @@
     <!-- PROJECT 2 -->
     <div class="project-card-modern">
         <div class="project-img-box">
-            <img src="{% static 'images/customer_churn.png' %}" alt="House Price Prediction">
+            <img src="{% static 'images/hackathon/hackathon_2.jpeg' %}" alt="House Price Prediction">
             <div class="img-overlay"></div>
-            <!-- Top Right Actions -->
-            <div class="project-top-actions">
-                <a href="#" class="project-icon-btn" title="Live Demo">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-                <a href="#" class="project-icon-btn" title="GitHub Repository">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
         </div>
     
         <div class="project-content">
-            <h3>Customer Churn Prediction</h3>
-            <p>Classification architecture predicting customer churn probability with deep data preprocessing and
-                hyperparameter tuning.</p>
+            <h3>BMS Thermal Runaway Prediction</h3>
+            <p>Built a machine learning model to detect early signs of battery thermal runaway from real-time sensor readings. Focused on improving battery safety through proactive monitoring and early warning alerts.</p>
 
             <div class="project-skills">
                 <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
-                <span class="skill-pill"><i class="fa-solid fa-chart-line"></i> XGBoost</span>
-                <span class="skill-pill"><i class="fa-solid fa-network-wired"></i> TensorFlow</span>
+                <span class="skill-pill"><i class="fa-solid fa-arrow-trend-up"></i> Time-Serie Forecasting</span>
             </div>
         </div>
     </div>
@@ -268,28 +551,18 @@
     <!-- PROJECT 3 -->
     <div class="project-card-modern">
         <div class="project-img-box">
-            <img src="{% static 'images/nlp_sentiment.png' %}" alt="House Price Prediction">
+            <img src="{% static 'images/hackathon/hackathon_3.png' %}" alt="House Price Prediction">
             <div class="img-overlay"></div>
-            <!-- Top Right Actions -->
-            <div class="project-top-actions">
-                <a href="#" class="project-icon-btn" title="Live Demo">
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
-                <a href="#" class="project-icon-btn" title="GitHub Repository">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
         </div>
     
         <div class="project-content">
-            <h3>NLP Sentiment Analysis</h3>
-            <p>Natural language processing pipeline to classify text sentiment with high accuracy using state-of-the-art
-                transformers.</p>
+            <h3>AI-Driven EMS for Microgrids</h3>
+            <p>Designed an AI-based energy management system to optimize power distribution across renewable and conventional energy sources in a microgrid. Improved energy efficiency while minimizing operational costs.</p>
 
             <div class="project-skills">
                 <span class="skill-pill"><i class="fa-brands fa-python"></i> Python</span>
-                <span class="skill-pill"><i class="fa-solid fa-language"></i> NLP</span>
-                <span class="skill-pill"><i class="fa-solid fa-layer-group"></i> HuggingFace</span>
+                <span class="skill-pill"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+                <span class="skill-pill"><i class="fa-solid fa-robot"></i> LLM</span>
             </div>
         </div>
     </div>

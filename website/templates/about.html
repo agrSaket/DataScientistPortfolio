@@ -20,29 +20,30 @@
     <!-- ITEM 1 (LEFT CARD) -->
     <div class="timeline-item left">
         <div class="timeline-card">
-            <h3>Machine Learning Engineer</h3>
-            <span>Tech Innovators Inc.</span>
+            <h3>Engineer</h3>
+            <span>LTTS</span>
             <ul class="timeline-bullets">
-                <li><i class="fa-solid fa-check"></i> Engineered end-to-end data pipelines processing 1M+ daily records.
+                <li><i class="fa-solid fa-check"></i> Developed ML model for predictive analytics and energy optimization, reducing operational energy costs by 18%.
                 </li>
-                <li><i class="fa-solid fa-check"></i> Deployed XGBoost and Random Forest ensembles decreasing churn by
-                    14%.</li>
-                <li><i class="fa-solid fa-check"></i> Orchestrated containerized deployment workflows using Docker &
-                    Kubernetes.</li>
+                <li><i class="fa-solid fa-check"></i> Built end-to-end data pipelines to collect, preprocess, and analyze 200+ real-time time-series signals from 15+ industrial devices.
+                </li>
+                <li><i class="fa-solid fa-check"></i> Designed Power BI and Streamlit dashboards to monitor KPIs, CO2 reduction, metrics, anomaly trends, and forecasting insights.
+                </li>
             </ul>
         </div>
         <div class="timeline-center">
             <div class="timeline-circle">
-                <i class="fa-solid fa-rocket"></i>
+                {% comment %} <i class="fa-solid fa-rocket"></i> {% endcomment %}
+                <img src="{% static 'images/about_page/LTTS_logo.png' %}" alt="">
             </div>
         </div>
         <div class="timeline-date-right">
-            <p class="timeline-badge">Jan 2024 - Present</p>
+            <p class="timeline-badge">Sep 2024 - Present</p>
         </div>
     </div>
 
     <!-- ITEM 2 (RIGHT CARD) -->
-    <div class="timeline-item right">
+    {% comment %} <div class="timeline-item right">
         <div class="timeline-date-left">
             <p class="timeline-badge">Jul 2023 - Dec 2023</p>
         </div>
@@ -62,7 +63,7 @@
                     insights.</li>
             </ul>
         </div>
-    </div>
+    </div> {% endcomment %}
 </div>
 
 <!-- EDUCATION -->
@@ -70,22 +71,40 @@
 
 <div class="edu-modern-grid">
     <div class="edu-modern-card">
-        <div class="edu-icon-modern"><i class="fa-solid fa-building-columns"></i></div>
-        <div class="edu-info">
-            <h3>Master of Science</h3>
-            <p>Data Science & Artificial Intelligence</p>
-            <span class="edu-date">2024 - 2026</span>
+        <div class="edu-icon-modern">
+            <img src="{% static 'images/about_page/NITAgartala_logo2.png' %}" alt="NITAgartala logo">
         </div>
+    
+        <div class="edu-info">
+            <h3>
+                <a href="{{ btechcollege }}" target="_blank">NIT Agartala</a>
+            </h3>
+            <p>B.Tech, Electrical Engineering</p>
+            <div class="edu-head">
+                <p class="edu-cgpa">8.92 CGPA</p>
+                <span class="edu-date">2020 - 24</span>
+            </div>
+        </div>
+    
         <div class="edu-glow"></div>
     </div>
 
     <div class="edu-modern-card">
-        <div class="edu-icon-modern"><i class="fa-solid fa-laptop-code"></i></div>
-        <div class="edu-info">
-            <h3>Bachelor of Technology</h3>
-            <p>Computer Science Engineering</p>
-            <span class="edu-date">2020 - 2024</span>
+        <div class="edu-icon-modern">
+            <img src="{% static 'images/about_page/school_logo2.png' %}" alt="school logo">
         </div>
+    
+        <div class="edu-info">
+            <h3>
+                <a href="{{ school }}" target="_blank">VS Public School</a>
+            </h3>
+            <p>Senior Secondary, PCM</p>
+            <div class="edu-head">
+                <p class="edu-cgpa">89.8%</p>
+                <span class="edu-date">2017 - 19</span>
+            </div>
+        </div>
+    
         <div class="edu-glow"></div>
     </div>
 </div>
@@ -97,34 +116,30 @@
 <div class="cert-modern-grid">
     <div class="cert-modern-card">
         <div class="cert-header">
-            <i class="fa-brands fa-aws cert-icon"></i>
+            <h3>Python: Mastering the Essentials</h3>
             <span>Verified</span>
         </div>
-        <h3>AWS Certified Machine Learning</h3>
-        <p>Specialty Certification</p>
     </div>
 
     <div class="cert-modern-card">
         <div class="cert-header">
-            <i class="fa-brands fa-google cert-icon"></i>
+            <h3>SQL for Beginners </h3>
             <span>Verified</span>
         </div>
-        <h3>TensorFlow Developer Certificate</h3>
-        <p>Google Professional Certificate</p>
     </div>
 
-    <div class="cert-modern-card">
+    {% comment %} <div class="cert-modern-card">
         <div class="cert-header">
             <i class="fa-brands fa-python cert-icon"></i>
             <span>Verified</span>
         </div>
         <h3>Data Analysis with Python</h3>
         <p>IBM Professional Certification</p>
-    </div>
+    </div> {% endcomment %}
 </div>
 
 <!-- PLATFORM STATISTICS -->
-<div class="section-title"><i class="fa-solid fa-chart-column"></i> Platform Statistics</div>
+{% comment %} <div class="section-title"><i class="fa-solid fa-chart-column"></i> Platform Statistics</div>
 
 <div class="stats-modern-grid">
     <!-- LEETCODE CARD -->
@@ -190,7 +205,7 @@
                 Top 2% in Competitions
             </div>
         </div>
-    </div>
+    </div> {% endcomment %}
 </div>
 
 <br><br>
