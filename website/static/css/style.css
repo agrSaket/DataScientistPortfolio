@@ -149,11 +149,11 @@ a:hover {
     z-index: 1000;
 }
 
-.logo {
+.logo a{
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-primary);
-    letter-spacing: -0.5px;
+    letter-spacing: -1.0px;
 }
 
 .menu {
@@ -166,6 +166,14 @@ a:hover {
     font-size: 0.9rem;
     font-weight: 500;
     position: relative;
+}
+
+.menu a.active {
+    color: var(--text-primary);
+}
+
+.menu a.active::after {
+    display:none;
 }
 
 .menu a::after {
